@@ -110,12 +110,12 @@ app.get('/view/:userId',(req, res) => {
 
 
 
-
+var port = process.env.PORT || 3306;
 
 
 
 
 // Server Listening
-app.listen(3306, () => {
+app.listen(port, () => {
     console.log('Server is running at port 3000');
 });
