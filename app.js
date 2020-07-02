@@ -6,10 +6,10 @@ const mysql = require('mysql');
 const app = express();
 
 const connection=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'v1234567',
-    database:'node_crud',
+    host:'sql12.freemysqlhosting.net',
+    user:'	sql12352231',
+    password:'izByqHrpLB',
+    database:'sql12352231',
     multipleStatements: true
 });
 
