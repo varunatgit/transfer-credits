@@ -7,7 +7,7 @@ const app = express();
 
 const connection=mysql.createConnection({
     host:'sql12.freemysqlhosting.net',
-    user:'	sql12352231',
+    user:'sql12352231',
     password:'izByqHrpLB',
     database:'sql12352231',
     multipleStatements: true
@@ -116,6 +116,6 @@ app.get('/view/:userId',(req, res) => {
 
 
 // Server Listening
-app.listen(3000, () => {
+app.listen(3306, () => {
     console.log('Server is running at port 3000');
 });
