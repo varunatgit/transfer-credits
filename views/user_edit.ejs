@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="/" class="btn btn-sm btn-primary" style="margin:5px; ">Home Page</a>
+   
+    <a href="/add" class="btn btn-sm btn-primary " style="margin-left:auto;">Previous Transfers</a>
+  </nav>
+
+  <!--NAVBAR END-->
+
+<div class="jumbotron">
+  <h2><%= title %></h2>
+
+
+  <div class="card">
+    <h5 class="card-header">Name : <%= user.name %></h5>
+    <div class="card-body">
+      <h5 class="card-title">Email : <%= user.email %></h5>
+      <h5 class="card-title">Credits : <%= user.credits %></h5>
+    
+      <a href="/transfer/<%= user.id %>" class="btn btn-sm btn-primary">Transfer Credits</a><br/><br/>
+      
+      
+  </div>
+  
+    
+  
+</div>
+
+</body>
+</html>
